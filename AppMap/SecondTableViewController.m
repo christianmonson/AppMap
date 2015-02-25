@@ -6,13 +6,18 @@
 //  Copyright (c) 2014 DevMountain. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "SecondTableViewController.h"
 
-@interface SecondViewController ()
+@interface SecondTableViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *passwordLabel;
+@property (weak, nonatomic) IBOutlet UITextField *UserNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *PasswordTextField;
 
 @end
 
-@implementation SecondViewController
+@implementation SecondTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

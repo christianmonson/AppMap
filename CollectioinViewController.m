@@ -1,22 +1,31 @@
 //
-//  FourthViewController.m
+//  CollectioinViewController.m
 //  AppMap
 //
 //  Created by Christian Monson on 2/24/15.
 //  Copyright (c) 2015 DevMountain. All rights reserved.
 //
 
-#import "FourthViewController.h"
+#import "CollectionDataSource.h"
+#import "CollectioinViewController.h"
 
-@interface FourthViewController ()
+@interface CollectioinViewController ()
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) IBOutlet CollectionDataSource *dataSource;
 
 @end
 
-@implementation FourthViewController
+@implementation CollectioinViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.collectionView.dataSource = self.dataSource;
+    [self.dataSource registerCollectionView:self.collectionView];
+
+    
 }
 
 - (void)didReceiveMemoryWarning {

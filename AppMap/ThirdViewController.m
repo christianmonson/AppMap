@@ -10,6 +10,11 @@
 
 @interface ThirdViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *eenyButton;
+@property (weak, nonatomic) IBOutlet UIButton *meenyButton;
+@property (weak, nonatomic) IBOutlet UIButton *mineyButton;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end
 
 @implementation ThirdViewController
@@ -17,6 +22,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)EenyButtonPressed:(id)sender {
+    self.label.text = @"Eeny";
+}
+
+- (IBAction)meenyButtonPressed:(id)sender {
+    self.label.text = @"Meeny";
+}
+
+- (IBAction)mineyButtonPressed:(id)sender {
+    self.label.text = @"Miney";
 }
 
 - (void)didReceiveMemoryWarning {

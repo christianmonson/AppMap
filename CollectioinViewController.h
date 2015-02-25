@@ -1,5 +1,5 @@
 //
-//  FourthViewController.h
+//  CollectioinViewController.h
 //  AppMap
 //
 //  Created by Christian Monson on 2/24/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FourthViewController : UIViewController
+@interface CollectioinViewController : UIViewController
 
 @end
